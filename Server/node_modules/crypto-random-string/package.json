@@ -1,0 +1,56 @@
+{
+	"name": "crypto-random-string",
+	"version": "5.0.0",
+	"description": "Generate a cryptographically strong random string",
+	"license": "MIT",
+	"repository": "sindresorhus/crypto-random-string",
+	"funding": "https://github.com/sponsors/sindresorhus",
+	"author": {
+		"name": "Sindre Sorhus",
+		"email": "sindresorhus@gmail.com",
+		"url": "https://sindresorhus.com"
+	},
+	"type": "module",
+	"exports": {
+		"types": "./index.d.ts",
+		"node": "./index.js",
+		"browser": "./browser.js"
+	},
+	"engines": {
+		"node": ">=14.16"
+	},
+	"scripts": {
+		"test": "xo && ava && tsd"
+	},
+	"files": [
+		"index.js",
+		"browser.js",
+		"core.js",
+		"index.d.ts"
+	],
+	"keywords": [
+		"random",
+		"string",
+		"text",
+		"id",
+		"identifier",
+		"slug",
+		"salt",
+		"pin",
+		"crypto",
+		"strong",
+		"secure",
+		"hex",
+		"secret",
+		"protect"
+	],
+	"dependencies": {
+		"type-fest": "^2.12.2"
+	},
+	"devDependencies": {
+		"ava": "^4.2.0",
+		"dot-prop": "^7.2.0",
+		"tsd": "^0.20.0",
+		"xo": "^0.48.0"
+	}
+}
