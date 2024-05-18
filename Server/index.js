@@ -42,7 +42,7 @@ app.use(cookieParser());
 app.use(
   cors({
     //frontend url
-    origin:"http://localhost:3000",
+    origin:"https://studynotion-ql7c.onrender.com/",
     credentials:true,
   })
 );
