@@ -42,7 +42,7 @@ app.use(cookieParser());
 app.use(
   cors({
     //frontend url
-    origin:"https://studynotion-ql7c.onrender.com",
+    origin:"https://study-notion-seven-nu.vercel.app",
     credentials:true,
   })
 );
