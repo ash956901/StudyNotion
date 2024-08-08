@@ -14,8 +14,21 @@ import HighlightText from "../components/core/HomePage/HighlightText"
 import InstructorSection from "../components/core/HomePage/InstructorSection"
 import LearningLanguageSection from "../components/core/HomePage/LearningLanguageSection"
 import TimelineSection from "../components/core/HomePage/Timeline"
-
+import { useEffect, useState } from "react"
+import ConfirmationModal from "../components/common/ConfirmationModal"
 function Home() {
+  
+  const [confirmationModal,setConfirmationModal]=useState(null);
+  useEffect(()=>{
+    setConfirmationModal({
+      text1: `Please star the repo  ⭐`,
+      text2: "Click proceed to go ahead",
+      btn1Text: "Proceed",
+      btn2Text: "Cancel",
+      btn1Handler: () => {window.location.href="https://github.com/ash956901/StudyNotion"},
+      btn2Handler: () => setConfirmationModal(null),
+    })
+  },[])
   return (
     <div>
       {/* Section 1 */}
@@ -190,6 +203,13 @@ function Home() {
 
       {/* Footer */}
       <Footer />
+
+       {
+        confirmationModal &&
+        <ConfirmationModal
+        modalData={confirmationModal} 
+       />
+      }
     </div>
   )
 }
