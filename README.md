@@ -1,3 +1,5 @@
+
+
 # [StudyNotion - EdTech Platform](https://study-notion-seven-nu.vercel.app/)
 
 StudyNotion is a fully functional EdTech platform that enables users to create, consume, and rate educational content. The platform is built using the MERN stack, which includes ReactJS, NodeJS, MongoDB, and ExpressJS.
@@ -89,7 +91,7 @@ To install the StudyNotion platform, follow these steps:
   - `MAIL_HOST=smtp.gmail.com`
   - `MAIL_PORT=<your-mail-port>`
   - `MAIL_USER=<your-mail-id>`
-  - `JWT-SECRET=<your-jwt-secret>`
+  - `MAIL_PASS=<your-mail-password>`
   - `RAZORPAY_KEY=<your-razorpay-key>`
   - `RAZORPAY_SECRET=<your-razorpay-secret>`
   - `CLOUD_NAME=<your-cloud-name-on-cloudinary>`
@@ -179,4 +181,3 @@ Contributions are welcome If you have any suggestions or find any issues, please
 - Email: [ak956901@gmail.com](mailto:ak956901@gmail.com)
 - LinkedIn: [https://in.linkedin.com/in/ashutosh-kumar-170242189](https://in.linkedin.com/in/ashutosh-kumar-170242189)
 - Website: [Ashutosh Kumar](https://portfolio-five-rho-46.vercel.app/)
-
